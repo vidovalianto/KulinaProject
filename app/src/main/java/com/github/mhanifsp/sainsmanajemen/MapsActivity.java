@@ -38,6 +38,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     List<Dapur> dapurs0;
     List<Customer> listCustomer;
     List<Dapur> listDapur;
+    List<Driver> listDriver;
+    int countDriver;
+    Dapur d;
 
     void input(){
         customers0 = new ArrayList<>( Input.getCcustomerInput(this) );
@@ -97,7 +100,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         List<Integer> siapDihapus = new ArrayList<>();
         cnt = 0;
         for(List<AbstractMap.SimpleEntry<Integer,Double>> list : allCustomerInDapur){
-            Dapur d = listDapur.get(cnt);
+            d = listDapur.get(cnt);
             int sum = 0;
             for (AbstractMap.SimpleEntry<Integer,Double> pair : list){
                 Customer c = listCustomer.get(pair.getKey());
@@ -106,13 +109,82 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     d.addCustomerToList(c);
                     siapDihapus.add(pair.getKey());
                 }
+
             }
             cnt++;
+
         }
     }
 
-    public void assignDriverToCustomer(){
-        
+    public void sortCustomerFromDapur(){
+        List<AbstractMap.SimpleEntry<Integer,Double>> distances = new ArrayList<>();
+        for(Dapur d: listDapur){
+            for (Customer c : d.getListCustomer()){
+                Collections.sort(distances, new Comparator<AbstractMap.SimpleEntry<Integer, Double>>() {
+                    @Override
+                    public int compare(AbstractMap.SimpleEntry<Integer, Double> o1, AbstractMap.SimpleEntry<Integer, Double> o2) {
+                        return o1.getValue().compareTo(o2.getValue());
+                    }
+                });
+            }
+
+        }
+    }
+
+    public void intializeDriver(){
+        listDriver = new ArrayList<>();
+        List<Customer> forDriver = new ArrayList<>();
+        int maxBox=40;
+        int customerBox=0;
+        for(Dapur d: listDapur){
+            for (Customer c : d.getListCustomer()){
+                Calculator.getDistance(c,d);
+                if(customerBox<=maxBox){
+                    customerBox = customerBox + c.getOrder();
+                    forDriver.add(c);
+                }
+                else{
+                    Driver driver = new Driver();
+                    driver.setCustomers(forDriver);
+                    driver.setBox(customerBox);
+                    listDriver.add(driver);
+                    customerBox=0;
+                }
+            }
+        }
+    }
+
+    public void showDriverRoute(){
+
+        Marker marker;
+        int cnt = 0;
+        for(Driver d : listDriver){
+            for (Customer c : d.getCustomers()){
+                mMap.addMarker(new MarkerOptions().position(new LatLng(c.getLatitude(),c.getLongitude())).title("C of " + d).icon(BitmapDescriptorFactory.defaultMarker(colors[cnt])));
+            }
+            cnt++;
+        }
+
+
+        mMap.moveCamera(CameraUpdateFactory.newCameraPosition(new CameraPosition.Builder().target(new LatLng(-6, 106))
+                .zoom(10)
+                .tilt(50)
+                .build()));
+
+    }
+
+    public void showDapurCustomer(){
+        Marker marker;
+
+        int cnt = 0;
+        for(Dapur d : listDapur){
+            for (Customer c : d.getListCustomer()){
+                mMap.addMarker(new MarkerOptions().position(new LatLng(c.getLatitude(),c.getLongitude())).title("C of " + d.getName()).icon(BitmapDescriptorFactory.defaultMarker(colors[cnt])));
+            }
+            marker = mMap.addMarker(new MarkerOptions().position(new LatLng(d.getLatitude(),d.getLongitude())).title(d.getName()).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN)));
+            cnt++;
+        }
+
     }
 
     @Override
@@ -127,6 +199,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         copyStartingList();
         setPriorities();
         assignCustomerToDapur();
+//        sortCustomerFromDapur();
+//        intializeDriver();
+
 
         mapFragment.getMapAsync(this);
     }
@@ -147,6 +222,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         Marker marker;
 
+//        show()
         int cnt = 0;
         for(Dapur d : listDapur){
             for (Customer c : d.getListCustomer()){
@@ -155,6 +231,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             marker = mMap.addMarker(new MarkerOptions().position(new LatLng(d.getLatitude(),d.getLongitude())).title(d.getName()).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN)));
             cnt++;
         }
+
 
         mMap.moveCamera(CameraUpdateFactory.newCameraPosition(new CameraPosition.Builder().target(new LatLng(-6, 106))
                 .zoom(10)
