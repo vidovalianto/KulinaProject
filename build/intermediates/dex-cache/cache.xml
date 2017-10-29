@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/mac/.android/build-cache/ce4148d84861db0cf0991deedfcc3bb0c5975e26/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d695dc4247690369d66c022c6d18190155c61fcd">
+        <dex dex="/Users/mac/Documents/Android Development/Tugas/SainsManajemen/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_125c97acc3ee97e8c975a520726296bbfecf70b0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mac/.android/build-cache/802903e4e861f200085bb2cf1d6ff24f4dbea41b/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="/Users/mac/Documents/Android Development/Tugas/SainsManajemen/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_aa0106b41e371f748064033ab9a9f9772ddf8081/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mac/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="/Users/mac/Documents/Android Development/Tugas/SainsManajemen/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.3.1_c432c64a32297a5c9892487eb4792075f89eed2b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mac/.android/build-cache/ce976d7ec06ff373a2826a7b50826543687353a5/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="/Users/mac/Documents/Android Development/Tugas/SainsManajemen/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9c74d2baac3b266190b61fae0a66b6c6b85f24eb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mac/.android/build-cache/7dac106b2a1366a05b852d18591a539b9a48bcea/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="/Users/mac/Documents/Android Development/Tugas/SainsManajemen/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4bfcfc20ffb25f1270cd9a1851803332d0ab8cd8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mac/.android/build-cache/80cc2b4b47645fdaaa53e7004aa9a8494d809e02/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="21160c044ba984fb2e33b833c89a496becb85cfd">
+        <dex dex="/Users/mac/Documents/Android Development/Tugas/SainsManajemen/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_575b2a7c6b3b5933c4d13a0fb31f6188c446a932/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mac/Documents/Android Development/Tugas/SainsManajemen/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6ce72fbbd1ef29a8cc2944cb4ae62371b5043548">
+        <dex dex="/Users/mac/Documents/Android Development/Tugas/SainsManajemen/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_91eda70ab7e839d878446224659764f9caf71699/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mac/Documents/Android Development/Tugas/SainsManajemen/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/mac/Documents/Android Development/Tugas/SainsManajemen/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_e52bffb05be0e5caac3326a3d90e8f07e7d37abd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mac/.android/build-cache/4d5b224e0e52075f6488d81b7653796b11ee3fd8/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="/Users/mac/Documents/Android Development/Tugas/SainsManajemen/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7a75a2543b8cf7199bb71154e7827384ffedc0fa/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mac/.android/build-cache/24ef2e51b17af2223a91941b3bf8e1b6e005eb77/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="4b70c5ad05857b8b3b2458777e1b489a96d82f05">
+        <dex dex="/Users/mac/Documents/Android Development/Tugas/SainsManajemen/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d9a3b5d5550c7e0ec8488ebb0befcb1e1dd083f6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mac/.android/build-cache/5267103c907475514653e1d07378b7c7c103bf30/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6178e31397c24ab1bfc09766832cdcf519621eb7">
+        <dex dex="/Users/mac/Documents/Android Development/Tugas/SainsManajemen/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f8b8b7eeb22dc5b326036f6014b9db2999b4ab93/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mac/.android/build-cache/5a21565c59c0fe866072b9f7f388de118a4a9282/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="/Users/mac/Documents/Android Development/Tugas/SainsManajemen/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_19e52a84d699927aaf7ca215fffd2b24b981462f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mac/.android/build-cache/92f74a1362eb8676eb1c0fd25e8041566b927835/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="/Users/mac/Documents/Android Development/Tugas/SainsManajemen/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8be2a697ec1a9ef556eccd43700758ff0985cb21/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mac/.android/build-cache/508404c915794db09108aa73218b8671f844f7b6/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="/Users/mac/Documents/Android Development/Tugas/SainsManajemen/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b69b5f34649f8289297f6212b5981f6744f02d40/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mac/.android/build-cache/419703773fe46524ff99d7ae75ff611a429989af/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="/Users/mac/Documents/Android Development/Tugas/SainsManajemen/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_dfc1554d2affdfb45911ef66ef441cf5e4972498/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mac/.android/build-cache/cfe7612268d3f08cd6538e26feb80ca49279ea2d/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/mac/Documents/Android Development/Tugas/SainsManajemen/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2c002d62ec8a386a20f5d39abc7a639e9c4d5241/classes.dex" />
+    </item>
+
+</items>
